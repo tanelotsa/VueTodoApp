@@ -13,7 +13,7 @@
         <input type="text" v-model.text="newTodo">
         <button @click="addNewTodo(newTodo)">Lisa</button>
         <ul>
-            <li v-for="(todo, index) in todos">
+            <li v-for="(todo) in todos">
                 <div v-bind:class="{ done: todo.done }">
                     {{ todo.text }}
                 </div>
